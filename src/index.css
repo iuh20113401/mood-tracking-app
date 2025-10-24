@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  /* neutral */
+  --color-neutral-900: #21214d;
+  --color-neutral-600: #57577b;
+  --color-neutral-300: #9393b7;
+  --color-neutral-200: #cbcdd0;
+  --color-neutral-0: #ffffff;
+
+  /* blue */
+  --color-blue-700: #2a4cd5;
+  --color-blue-600: #4865db;
+  --color-blue-300: #89caff;
+  --color-blue-200: #c7d3f7;
+  --color-blue-100: #e0e6fa;
+
+  /* red */
+  --color-red-700: #e60013;
+  --color-red-300: #ff9b99;
+
+  /* Indigo  */
+  --color-indigo-200: #b8b1ff;
+
+  /* green */
+  --color-green-300: #89e780;
+
+  /* amber */
+  --color-amber-300: #ffc97c;
+
+  /* gradient */
+  --color-light-gradient: linear-gradient(180deg, #f5f5ff 72.99%, #e0e0ff 100%);
+
+  /* font */
+  --font-reddit-san: "Reddit Sans", sans-serif;
+
+  /* leading */
+  --leading-100-percent: 100%;
+  --leading-110-percent: 110%;
+  --leading-120-percent: 120%;
+  --leading-130-percent: 130%;
+  --leading-140-percent: 140%;
+
+  /* font-size */
+  --text-52: 52px;
+  --text-46: 46px;
+  --text-40: 40px;
+  --text-32: 32px;
+  --text-28: 28px;
+  --text-24: 24px;
+  --text-20: 20px;
+  --text-18: 18px;
+  --text-15: 15px;
+  --text-13: 13px;
+  --text-12: 12px;
+
+  /* spacing */
+  --spacing-0: 0;
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+
+  /* radius */
+  --radius-0: 0;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 999px;
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply font-reddit-san font-bold text-46 tracking-[-2px] leading-120-percent;
+    @apply sm:text-52  sm:leading-140-percent;
+  }
+
+  .text-preset-2 {
+    @apply font-reddit-san font-bold text-32 tracking-[-0.3px] leading-120-percent;
+    @apply sm:text-40;
+  }
+  .text-preset-3 {
+    @apply font-reddit-san font-bold text-28 tracking-[-0.3px] leading-130-percent;
+    @apply sm:text-32 sm:leading-140-percent;
+  }
+  .text-preset-4-semi {
+    @apply font-reddit-san font-semibold text-24 leading-140-percent tracking-normal;
+  }
+  .text-preset-4-regular {
+    @apply font-reddit-san font-normal text-24 leading-140-percent tracking-normal;
+  }
+  .text-preset-5 {
+    @apply font-reddit-san font-semibold text-20 leading-140-percent tracking-normal;
+  }
+  .text-preset-6 {
+    @apply font-reddit-san font-medium text-18 leading-120-percent tracking-normal;
+  }
+  .text-preset-7 {
+    @apply font-reddit-san font-normal text-15 leading-140-percent tracking-[-0.3px];
+  }
+  .text-preset-8 {
+    @apply font-reddit-san font-semibold text-13 leading-100-percent tracking-normal;
+  }
+  .text-preset-9 {
+    @apply font-reddit-san font-normal text-12 leading-110-percent tracking-normal;
+  }
+}
